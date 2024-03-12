@@ -1,0 +1,22 @@
+html{
+    background-color: antiquewhite;
+}
+
+body{
+    font-size: 150%;
+    padding: 20px;
+}
+
+div{
+    padding: 10px;
+}
+
+input[type=text], select {
+    width: 9%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }

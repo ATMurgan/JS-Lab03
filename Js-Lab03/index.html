@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Assignment 3 | COMP1073 Client-Side JavaScript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="js/op.js" defer></script>
+        <link rel="stylesheet" href="css/styles.css" />
+
+    </head>
+
+    <body>
+        <header>
+            <h1>The Pizza Machine</h1>
+        </header>
+        <main>
+            <h2>Form that will make Pizza object when clicked</h2>
+
+            <!-- First name-->
+            <div>
+                <label for="firstName"> First Name</label>
+                <input type="text" name="firstName" id="firstName" size="25" maxlength="50" placeholder="First Name"
+                required="required"/>               
+            </div>
+
+            <!--Size of Pizza-->
+            <div>
+                <label for="size">Size of Pizza</label>
+            <select name="size" id="size">
+                    <option value="1">Personal</option>
+                    <option value="2">Small</option>
+                    <option value="3">Medium</option>
+                    <option value="4">Large</option>   
+            </select> 
+            </div>
+
+            <!--Toppings-->
+            <label for="toppings">Toppings: </label>
+            <div class="topping">
+                <label for="topping1" class="checkbox">
+                <input type="checkbox" name="toppings[]" id="topping1" value="pepperoni"/>
+                Pepperoni
+                </label>
+            
+                <label for="topping2" class="checkbox">
+                <input type="checkbox" name="toppings[]" id="topping2" value="green peppers" />
+                Green Peppers
+                </label>
+            
+                <label for="topping3" class="checkbox"></label>
+                <input type="checkbox" name="toppings[]" id="topping3" value="black olives" />
+                Black Olives
+                </label>
+
+                <label for="topping4" class="checkbox">
+                <input type="checkbox" name="toppings[]" id="topping4" value="mushrooms" />
+                Mushrooms
+                </label>
+
+                <label for="topping5" class="checkbox">
+                <input type="checkbox" name="toppings[]" id="topping5" value="bacon" />
+                Bacon
+                </label>
+
+                <label for="topping6" class="checkbox">
+                <input type="checkbox" name="toppings[]" id="topping6" value="ground beef" />
+                Ground Beef
+                </label>
+
+            </div>        
+
+            <!--Type of Crust-->
+            <div>
+                <label for="crust">Type of Crust</label>
+            <select name="crust" id="crust">
+                    <option value="1">Regular Crust</option>
+                    <option value="2">Thin Crust</option>
+                    <option value="3">Thick Crust</option>
+            </select> 
+            </div>
+
+            <button type="submit">Create Pizza</button>
+
+            <p id="pizzaInfo"> </p>
+
+        </main>
+    </body>
+</html>
